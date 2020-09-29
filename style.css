@@ -1,0 +1,57 @@
+body{
+    font-family: 'Ralewway', sans-serif;
+    color:  #6e6e6e;
+}
+
+#bloc_page{
+    width: 70%;;
+    margin:auto;
+}
+
+
+/* Bannière */
+header{
+    display : flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+}
+
+header img{
+    height: 50px;
+    width: 100px;
+    margin-top: 10px;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    
+}
+
+nav li{
+    
+    
+}
+
+nav a{
+    color:  #6e6e6e;
+    padding-left : 40px;
+    padding-right: 40px;
+    text-decoration: none;
+    padding-top: 50px;
+}
+
+nav a:hover{
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+}
+
+
+/* BODY*/
+
+h1{
+    color : black;
+    font-size : 1.5em;
+    margin-top: 20px;
+}
