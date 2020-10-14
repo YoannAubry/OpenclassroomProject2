@@ -1,5 +1,6 @@
 body{
     font-family: 'Ralewway', sans-serif;
+    margin:0;
 }
 
 #bloc_page{
@@ -117,6 +118,8 @@ h1{
 
 /* ************************ */
         /* FILTER*/
+
+/* possibilité de flex wrap */
 /* ************************ */  
 
 .filters{
@@ -124,7 +127,7 @@ h1{
     margin-top: 30px;
 }
 .filters ul{
-    width: 70%;
+    max-width: 800px;
     list-style-type: none;
     padding-left: 0;
     display: flex;
@@ -208,7 +211,7 @@ h1{
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
-    height: 400px;
+    height: 550px;
 }
 
 h2{
@@ -230,18 +233,31 @@ h2{
     margin-left: 3%;
 }
 
-
+.display{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .display div{
     width: 30%;
-    height: 150px;
+    height: 180px;
+    margin:1.5%;
     background-color: white;
     border-radius: 15px;
 }
+
+.display span{
+    height:15px;
+    font-size: 0.8em;
+    margin: 0 4% 0 4%;
+}
+
+
+
 .normalHousing .display img{
     width: 96%;
     height: 100px;
-    overflow: hidden;
+    object-fit: cover;
     margin:2%;
     border-radius: 15px 15px 0 0;
 }
@@ -262,6 +278,12 @@ h2{
 }
 
 
-.display{
-    
+.score{
+    display: flex;
+    margin: 2% 4% 0 4% !important;
+    height: 10px !important;
+}
+.score i{
+    color: #0065FC;
+    font-size: 10px;
 }
