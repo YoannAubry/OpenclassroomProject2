@@ -275,7 +275,7 @@ h3{
 }
 .normalHousing .display div{
     width: 260px;
-    height: 180px;
+    height: auto;
     margin:1.5%;
 }
 
@@ -316,6 +316,7 @@ h3{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;    
 }
 
 .popularHousing img{
@@ -373,7 +374,7 @@ h3{
 
 .score{
     display: flex;
-    margin: 0% 0% 0 4% !important;
+    margin: 0% 0% 4% 4% !important;
     height: 10px !important;
     width: 100px !important;
 }
@@ -591,6 +592,14 @@ footer p{
     .popularHousing .display div{
         width: 94%;
         margin:3%;
+    }
+
+    .popularHousing img{
+        height: 120px;
+    }
+
+    .normalHousing img{
+        height: 100px;
     }
 
     .activitiesDisplay{
