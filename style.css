@@ -12,35 +12,51 @@ body{
         /* Banner */
 /* ************************ */
 
+
+
 header{
-    display : flex;
+    display: flex;
     justify-content: space-between;
     align-items: baseline;
-
+    height: 50px;
 }
 
 header img{
     height: 50px;
-    width: 100px;
-    margin-top: 10px;
+    width: auto;
 }
 
-nav ul{
+.registrationMobile{
+    display: none;
+    color: #0065FC;
+    font-weight: bold;
+}
+
+header ul{
+    width: 30%;
     list-style-type: none;
     display: flex;
-    
+    justify-content: space-between;  
+    margin:0; 
+    position: absolute;
+    top:0;
+    right: 0;
 }
 
 
-nav a{
+
+header li{
+    height: 50px;
+}
+
+header a{
+    display: block;
     color:  #6e6e6e;
-    padding-left : 40px;
-    padding-right: 40px;
     text-decoration: none;
-    padding-top: 50px;
+    padding: 31.6px 10px 0 10px;
 }
 
-nav a:hover{
+header a:hover{
     border-top: 2px solid #0065FC;
     color: #0065FC;
 }
@@ -70,6 +86,14 @@ h1{
 
 .search{
     display : flex;
+}
+
+.search button i{
+    display: none;
+}
+
+.search p{
+    margin: 0;
 }
 
 .search .logo{
@@ -212,8 +236,7 @@ h1{
     display: flex;
     margin-top: 30px;
     height: auto;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .housing .title{
@@ -257,9 +280,10 @@ h3{
 }
 
 
-.display div{
+.display > div{
     background-color: white;
     border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .normalHousing span{
@@ -323,6 +347,7 @@ h3{
 }
 .popularHousing div{
     display: flex;
+    margin: 1.5% 0 1.5% 0;
 }
 
 .popularHousing h2{
@@ -355,4 +380,241 @@ h3{
 .score i{
     color: #0065FC;
     font-size: 10px;
+}
+
+/* ************************ */
+        /* Activities */
+/* ************************ */
+
+.activities{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.activitiesDisplay{
+    display: flex;
+    justify-content: space-between;
+}
+
+.activitiesDisplay > div{
+    width: 23%;
+}
+
+.activities img{
+    object-fit: cover;
+}
+
+.activities .long{
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 25px;
+}
+.activities .long img{
+    height: 300px;
+    width: 100%;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.activities .shorts{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: space-between;
+}
+
+.activities .shorts div{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 25px;
+}
+
+.activities .shorts img{
+    height: 120px;
+    width: 100%;
+    border-radius: 25px 25px 0px 0px;
+}
+
+
+
+.activities h2{
+    margin: 10px 20px 10px 20px;
+}
+
+
+
+/* ************************ */
+        /* footer */
+/* ************************ */
+
+footer{
+    display: flex;
+    background-color: #F2F2F2;
+    margin-top: 30px;
+}
+
+footer ul{
+    list-style-type: none;
+
+    margin: 30px 15% 30px 0;
+
+}
+footer li{
+    margin-bottom: 10px;
+}
+
+footer p{
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+
+
+@media screen and (max-width: 768px)
+{
+
+    header ul{
+        width: 40%;
+    }
+
+    .housing{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 30px;
+        height: auto;
+        justify-content: space-between;
+    }
+
+
+    .popularHousing{
+        max-width: 100%;
+        width: 100%;
+    }
+    .normalHousing{
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 426px)
+{
+    header{
+        display: flex;
+        flex-direction: column;
+        height: 80px;
+        margin-bottom: 30px;
+    }
+    header div{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        width: 100%;
+    }
+    header ul{
+        margin-top: 40px;
+        width: 100%;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+    header li a{
+        width: 45vw;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    header a{
+        border-bottom: 2px solid #F2F2F2 ;
+    }
+    header a:hover{
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+    }
+    
+
+
+
+    .registration{
+        display: none;
+    }
+    .registrationMobile{
+        display: contents;
+    }
+    .registrationMobile p{
+        position: absolute;
+        top: 25px;
+        right: 0px;
+        margin:0 2% 0 0;
+    }
+
+    .search button i{
+        display: contents;
+    }
+
+    .search button{
+        width:15%;
+    }
+    .search p{
+        display:none;
+    }
+    .search .logo{
+        width: 15%;
+    }
+    .filter{
+        margin-top: 10px;
+    }
+
+    .search input{
+        width: 70%;
+    }
+    footer{
+        flex-direction: column;
+    }
+
+
+    .normalHousing{
+        background-color: white;
+        border-radius: 0;
+    }
+    
+    .popularHousing{
+        border-radius: 0;
+    }
+
+    .housing .display{
+        width: 100%;
+    }
+
+    .normalHousing .display div{
+        width: 100%;
+        margin:3%;
+    }
+
+    .popularHousing .display div{
+        width: 94%;
+        margin:3%;
+    }
+
+    .activitiesDisplay{
+        flex-direction: column;
+    }
+    .activitiesDisplay > div{
+        width: 94%;
+    }
+    .activities .shorts img{
+        height: 100px;
+    }
+    .activities .long img{
+        height: 100px;
+    }
+
+    .activities .shorts{
+        margin:3%;
+    }
+    .activities .shorts div{
+        margin: 3% 0 3% 0;
+    }
+
+    .activities .long {
+        margin:3%;
+    }
+
 }
