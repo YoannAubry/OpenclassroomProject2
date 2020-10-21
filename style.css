@@ -1,6 +1,6 @@
 body{
     font-family: 'Ralewway', sans-serif;
-    margin:0;
+    margin:2%;
 }
 
 #bloc_page{
@@ -33,7 +33,7 @@ header img{
 }
 
 header ul{
-    width: 30%;
+    
     list-style-type: none;
     display: flex;
     justify-content: space-between;  
@@ -354,7 +354,7 @@ h3{
     display: flex;
     width: 70%;
     flex-direction: column;
-    margin: 5% 0 5% 0;
+    margin: 5% 0 0 0;
     position: relative;
 }
 
@@ -470,9 +470,6 @@ footer p{
 @media screen and (max-width: 768px)
 {
 
-    header ul{
-        width: 40%;
-    }
 
     .housing{
         display: flex;
@@ -499,6 +496,46 @@ footer p{
                        /* RESPONSIVE  PHONE*/
 /* ************************************************************************ */
 /* ************************************************************************ */
+
+
+
+@media screen and (max-width: 650px){
+    /* ************************************************ */
+                 /* Activities */
+    /* ************************************************ */
+
+    .activitiesDisplay{
+        flex-direction: column;
+    }
+    .activitiesDisplay > div{
+        width: 94%;
+    }
+    .activities .shorts img{
+        height: 100px;
+    }
+    .activities .long img{
+        height: 100px;
+    }
+
+    .activities .shorts{
+        margin:3%;
+    }
+    .activities .shorts div{
+        margin: 3% 0 3% 0;
+    }
+
+    .activities .long {
+        margin:3%;
+    }
+
+    /* ************************************************ */
+                     /* footer */
+    /* ************************************************ */
+    footer{
+        flex-direction: column;
+    }
+}
+
 
 
 @media screen and (max-width: 426px)
@@ -618,39 +655,8 @@ footer p{
         height: 100px;
     }
 
-    /* ************************************************ */
-                 /* Activities */
-    /* ************************************************ */
+    
 
-    .activitiesDisplay{
-        flex-direction: column;
-    }
-    .activitiesDisplay > div{
-        width: 94%;
-    }
-    .activities .shorts img{
-        height: 100px;
-    }
-    .activities .long img{
-        height: 100px;
-    }
-
-    .activities .shorts{
-        margin:3%;
-    }
-    .activities .shorts div{
-        margin: 3% 0 3% 0;
-    }
-
-    .activities .long {
-        margin:3%;
-    }
-
-    /* ************************************************ */
-                     /* footer */
-    /* ************************************************ */
-    footer{
-        flex-direction: column;
-    }
+    
 
 }
