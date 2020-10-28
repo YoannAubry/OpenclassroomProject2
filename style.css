@@ -83,7 +83,7 @@ h1{
     display : flex;
 }
 
-.search button i{
+.search .buttonPhone{
     display: none;
 }
 
@@ -467,7 +467,12 @@ footer p{
 /* ************************************************************************ */
 /* ************************************************************************ */
 
-@media screen and (max-width: 768px)
+
+
+
+
+
+@media screen and (max-width: 850px)
 {
 
 
@@ -538,7 +543,7 @@ footer p{
 
 
 
-@media screen and (max-width: 426px)
+@media screen and (max-width: 427px)
 {
 
 
@@ -594,14 +599,14 @@ footer p{
                        /*Searchbar*/
     /* ************************************************ */
 
-    .search button i{
-        display: contents;
+    .search .buttonPhone{
+        display:contents;
     }
 
     .search button{
         width:15%;
     }
-    .search p{
+    .search .buttonComputer{
         display:none;
     }
     .search .logo{
